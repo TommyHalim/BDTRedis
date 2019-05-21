@@ -82,8 +82,8 @@ sentinel failover-timeout mymaster 10000
 ### 1. Running Redis
 Untuk menjalankan server redis dengan perintah:
 ~~~
-sudo -u redis redis-server /etc/redis/redis.conf &
-sudo -u redis redis-server /etc/redis/sentinel.conf &
+src/redis-server redis.conf &
+src/redis-server sentinel.conf --sentinel &
 ~~~
 
 
